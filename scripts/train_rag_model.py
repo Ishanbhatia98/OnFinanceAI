@@ -3,6 +3,8 @@ import pandas as pd
 file_name = 'data/Financebench.csv'
 df = pd.read_csv(file_name)
 
+print(list(df.columns))
+print(df.head())
 # Dummy dataset class for illustration purposes
 from torch.utils.data import Dataset, DataLoader
 class QADataset(Dataset):
